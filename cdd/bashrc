@@ -1,0 +1,6 @@
+cdd() {
+	value=$(cat ~/.bookmark | awk -v key="$1" '{if ($1 == key) { print $2 }}')
+	echo $value
+	cd $value
+}
+

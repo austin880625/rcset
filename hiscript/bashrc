@@ -1,0 +1,6 @@
+SHELL_NAME=$0
+
+hiscript() {
+	history > /tmp/hiscript
+	~/.local/bin/hiscript.py $SHELL_NAME $1
+}

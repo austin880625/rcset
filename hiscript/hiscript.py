@@ -56,7 +56,7 @@ def main(scr, cmds):
         scr.clear()
         l = len(str(cur))
         start = max(start, 0)
-        end = start + y
+        end = min(start + y, maxcur)
         
         for i in range(start, end):
             if i == cur:

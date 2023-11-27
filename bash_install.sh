@@ -38,7 +38,7 @@ process_vimrc() {
 	echo '"##RCSET_END###' >> vimrc.new
 
 	cp vimrc.new ~/.vimrc
-	rm bashrc.new
+	rm vimrc.new
 }
 
 process_bashrc

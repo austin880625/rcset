@@ -4,3 +4,8 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 
 alias grep='grep --color=auto'
+
+vimscript() {
+	vim $1
+	chmod +x $1
+}

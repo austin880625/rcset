@@ -1,4 +1,5 @@
 vim.api.nvim_set_keymap('i', 'jh', "<Esc>", { noremap=true, silent=true })
+vim.api.nvim_set_keymap('v', 'jh', "<Esc>", { noremap=true, silent=true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ":NvimTreeToggle<Enter>", { noremap=true, silent=true })
 vim.cmd [[colorscheme slate]]
 vim.cmd [[set scrolloff=5]]
@@ -87,3 +88,5 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>fs', builtin.grep_string, {})
+vim.keymap.set('n', '<leader>fm', builtin.lsp_document_symbols, {})

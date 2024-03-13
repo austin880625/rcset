@@ -1,5 +1,4 @@
 vim.api.nvim_set_keymap('i', 'jh', "<Esc>", { noremap=true, silent=true })
-vim.api.nvim_set_keymap('v', 'jh', "<Esc>", { noremap=true, silent=true })
 vim.api.nvim_set_keymap('n', '<Leader>e', ":NvimTreeToggle<Enter>", { noremap=true, silent=true })
 vim.cmd [[colorscheme slate]]
 vim.cmd [[set scrolloff=5]]
